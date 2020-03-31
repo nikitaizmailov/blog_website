@@ -20,13 +20,18 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'oq38ecmi(&g^98yh_ne2ht-7!awyasji$&tca9w3d#geb12xk@'
+# SECRET_KEY = 'oq38ecmi(&g^98yh_ne2ht-7!awyasji$&tca9w3d#geb12xk@'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # As it reveals vulneratbility and source code in your code.
-DEBUG = True
+# Turn it OFF/False when you have pushed final version to heroku and other people online
+# can access it. But when you developing on local machine/server, where only you
+# have access - then have it ON/True, as it gives you hints with your errors
+DEBUG = False
 
 ALLOWED_HOSTS = [
+    'djangoblogapp2020.herokuapp.com',
 ]
 
 
