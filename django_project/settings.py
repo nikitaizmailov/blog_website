@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # Turn it OFF/False when you have pushed final version to heroku and other people online
 # can access it. But when you developing on local machine/server, where only you
 # have access - then have it ON/True, as it gives you hints with your errors
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'djangoblogapp2020.herokuapp.com',
