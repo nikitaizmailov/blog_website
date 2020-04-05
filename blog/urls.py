@@ -2,7 +2,7 @@ from django.urls import path
 from .views import PostListView, PostDetailView, PostCreateView, PostUpdateView, PostDeleteView, UserPostListView
 from . import views
 
-# this is basically means
+# this basically means
 # localhost/blog/ABOUT/
 
 urlpatterns = [
